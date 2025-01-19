@@ -5,16 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canvas and Image</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+  </style>
 </head>
 <body class="overflow-y-scroll">
   <!-- First Div: Fixed Canvas -->
 <div class="relative">
-
+  <div class="z-[999] fixed h-24 w-full flex justify-between items-center p-14 text-white bg-zinc-900 font-[playwrite-in]">
+    <div class="font-bold text-5xl">
+      <h1><a href="index.html">Sanish Pagui</a></h1>
+    </div>
+    <div class="">
+      <ul class="flex space-x-7 text-2xl font-semibold ">
+        <li class="hover:text-blue-500"><a href="#home">Home</a></li>
+        <li class="hover:text-blue-500"><a href="about.html">About</a></li>
+        <li class="hover:text-blue-500"><a href="#projects">Projects</a></li>
+        <li class="hover:text-blue-500"><a href="#contact">Contact</a></li>
+      </ul>
+      </ul>
+    </div>
+  </div>
   <div class="sticky w-full h-full top-0 bg-black">
     <canvas id="canvas" class="w-full h-full"></canvas>
   </div>
-  
-  <!-- Second Div: Scrollable White Content -->
   <div class="relative w-full h-[200vh] bg-white">
   </div>
 </div>
